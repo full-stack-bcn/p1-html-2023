@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --header-height: 2.8rem;
+  --serif-font: "Crimson Text";
+  --sans-serif-font: "Source Sans Pro";
+  --monospace-font: "Iosevka Term";
+  --background-color: hsl(45, 26%, 95%);
+  --background-color-2: hsl(45, 26%, 92%);
+  --div-izquierdo:15rem;
+}
+
+body {
+  /* display: flex; */
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  font-size: 14pt;
+  color: #222;
+  background-color: var(--background-color);
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  background-color: #6633001a;
+  backdrop-filter: blur(8px);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  margin-left: 15rem;
+}
+
+.contenedor {
+  height: 100vh; 
+  
+}
+
+.div-izquierdo {
+  position: fixed;
+  border: 3px solid black;
+  width: 20%;
+  top: var(--header-height);
+  width: var(--div-izquierdo);
+}
+
+.div-derecho{
+  padding-top: 7.5rem;
+  margin-left: 4rem;
+  padding-bottom: 5rem;
+  width: 37.5rem;
+}
+
+.div-izquierdo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mainTitle {
+  display: block;
+  font-size: 1.3rem;
+  padding: 0.1rem 0;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}

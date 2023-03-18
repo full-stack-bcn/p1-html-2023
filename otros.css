@@ -1,0 +1,71 @@
+.left_menu {
+    background-color: var(--background-color-2);
+    position: fixed;
+    top: var(--header-height);
+    padding: 1.8rem;
+    width: 20%;
+    border: solid black;
+   
+    z-index: 50;
+    float: left;
+  }
+  
+  .doc {
+    position: fixed;
+    top: var(--header-height);
+    float: left;
+    padding: 0 1.5rem;
+    border: 3px solid black;
+    scroll-behavior: smooth;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 80%;
+    float: left;
+  }
+  
+  
+  
+  .left_menu a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .mainTitle {
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.1rem 0;
+    margin: 0 0 0.5rem;
+  }
+  
+  .subtitle {
+    display: block;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .visualCode{
+    color: #a9b7c6;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
