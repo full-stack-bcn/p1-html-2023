@@ -63,17 +63,18 @@ main{
 .div-izquierdo a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 .mainTitle {
-  display: block;
+  
   font-size: 1.3rem;
   padding: 0.1rem 0;
   margin: 0 0 0.5rem;
 }
 
 .subtitle {
-  display: block;
+  
   font-size: 1rem;
   margin: 0 0 0.5rem;
 }
