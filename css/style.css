@@ -1,0 +1,22 @@
+ :root{
+    --fuenteHeading:'Staatliches', sans-serif;
+    --fuenteTitulos:'Bebas Neue', cursive;
+    --fuenteBody:'Crimson Text', serif;
+ }
+
+ .header-cv{
+    font-family: var(--fuenteHeading);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: aqua;
+    
+ }
+
+
+ .imagen-perfil {
+   width: 100px;
+   height: auto;
+
+ }
