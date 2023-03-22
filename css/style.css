@@ -1,19 +1,17 @@
  :root{
     --fuenteHeading:'Staatliches', sans-serif;
-    --fuenteTitulos:'Bebas Neue', cursive;
+    --fuenteTitulos:'Bebas Neue', serif;
     --fuenteBody:'Crimson Text', serif;
  }
 
- .header-cv{
+ .header-cv {
     font-family: var(--fuenteHeading);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: aqua;
-
-    
+    background-color: aqua;  
  }
 
  .imagen-perfil {
@@ -21,3 +19,18 @@
    height: auto;
 
  }
+
+.seccion {
+   padding-top: 1rem;
+}
+
+.header-seccion{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.title-seccion{
+   padding-left: 1rem;
+   font-family: var(--fuenteTitulos);
+}
