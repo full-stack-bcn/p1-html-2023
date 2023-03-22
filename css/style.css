@@ -9,11 +9,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: aqua;
+
     
  }
-
 
  .imagen-perfil {
    width: 100px;
