@@ -14,3 +14,22 @@
     top: 0;
     left: 0;
 }
+
+.UPC{
+    width: 35px;
+    margin-top: 1rem;
+}
+.HP{
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    
+}
+.Udemy{
+    width: 50px;
+    height: 30px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    
+}
