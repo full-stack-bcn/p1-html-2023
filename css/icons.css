@@ -4,4 +4,13 @@
     background-color: white;
     border-radius: 50%;
     margin:1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
