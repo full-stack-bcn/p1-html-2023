@@ -15,11 +15,20 @@
     <!-- iconos -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     
     <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preload" href="/css/icons.css" as="icons">
     <link rel="stylesheet" href="/css/icons.css">
+
+    <!-- CODIGO JAVASCRIPT -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+ 
+
 </head>
 <body>
     <header>
@@ -29,7 +38,18 @@
             </div>
 
             <div>
-                Alejandro Alarcón Cano
+                <div class="container-icono-header">
+                    <svg class="icono-header" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 96 960 960" width="35"><path d="M479 936 189 777V537L40 456l439-240 441 240v317h-60V491l-91 46v240L479 936Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127V573L479 696 249 571v170l230 127Zm1-240Zm-1 74Zm0 0Z"/></svg>
+
+                    <svg class="icono-header" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 96 960 960" width="35"><path d="M140 876V383v493Zm0 60q-24 0-42-18t-18-42V383q0-24 18-42t42-18h190v-87q0-23 18-41.5t42-18.5h180q24 0 42 18.5t18 41.5v87h190q24 0 42 18t18 42v238q-14-11-28.5-20T820 584V383H140v493.5-.5h334.455Q478 892 484 907t14 29H140Zm250-613h180v-87H390v87Zm330 686q-79 0-136-57t-57-136q0-79 57-136t136-57q79 0 136 57t57 136q0 79-57 136t-136 57Zm74-92 27-27-84-76V690h-42v135.776L794 917Z"/></svg>
+
+                    <svg class="icono-header" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 96 960 960" width="35"><path d="M781 459 650 328 545 434 444 333l127-127q11-11 23-15.5t26-4.5q14 0 26.5 4.5T670 206l104 104q15 15 23 34t9 39q1 20-5 39.5T781 459ZM238 640q-20-20-20-51.5t20-51.5l91-92 103 103-92 92q-22 22-52 21t-50-21Zm-64 307q-10-10-15-23t-5-27q0-14 5-27t15-23l300-299-144-145q-15-15-15-35t15-35q15-15 35.5-15t35.5 15l144 144 57-57 105 107q9 9 9 21t-9 21q-13 13-25.5 8.5T658 562L273 947q-10 10-22.5 15t-26.5 5q-14 0-27-5t-23-15Z"/></svg>
+
+                    <svg class="icono-header" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 96 960 960" width="35"><path d="M140 613v103h680V613H140Zm0-437h680q24.75 0 42.375 17.625T880 236v480q0 24.75-17.625 42.375T820 776H626v200l-146-74-146 74V776H140q-24.75 0-42.375-17.625T80 716V236q0-24.75 17.625-42.375T140 176Zm0 329h680V236H140v269Zm0 211V236v480Z"/></svg>
+
+                </div>
+                <p class="name">Alejandro Alarcón Cano</p>
+                
             </div>
 
             <div>
@@ -39,164 +59,174 @@
     </header>
 
     <main>
+        <div class="content">
+            <!-- SECCION DE EDUCACION -->
+            <div class="seccion">
+                <div class="header-seccion background-educacion">
+                    <img src="Images/icons/school.svg" alt="icono de la sección" class="icon">
+                    <p class="title-seccion">Educación</p>
+                </div>
 
-        <!-- SECCION DE EDUCACION -->
-        <div class="seccion">
-            <div class="header-seccion background-educacion">
-                <img src="Images/icons/school.svg" alt="icono de la sección" class="icon">
-                <p class="title-seccion">Educación</p>
+                <div class="descripcion">
+                    <div class="container-description">
+                        <img src="Images/icons/School-inner.svg" alt="School" class="icon-descripcion">
+                        <div class="especifica-descripcion">
+                            <p>Escola Bon Salvador</p>
+                            <p>Technological high school studies</p>
+                            <p>2012-2013</p>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Universitat Politècnica de Catalunya</p>
+                            <p>Bachelor's degree, Industrial engineering</p>
+                            <p>2013-2017</p>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Universitat Politècnica de Catalunya</p>
+                            <p>Master's degree, Industrial engineering</p>
+                            <p>2017-2020</p>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Universitat Politècnica de Catalunya</p>
+                            <p>Postgraduate degree, Computer science engineering</p>
+                            <p>2023-2024</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
 
-            <div class="descripcion">
-                <div class="container-description">
-                    <img src="Images/icons/School-inner.svg" alt="School" class="icon-descripcion">
-                    <div class="especifica-descripcion">
-                        <p>Escola Bon Salvador</p>
-                        <p>Technological high school studies</p>
-                        <p>2012-2013</p>
-                    </div>
+            <!-- SECCION DE EXPERIENCIA LABORAL -->
+            <div class="seccion">
+                <div class="header-seccion background-experiencia">
+                    <img src="Images/icons/work_history.svg" alt="icono de la sección" class="icon">
+                    <p class="title-seccion">Experiencia</p>
                 </div>
-                <div class="container-description">
-                    <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Universitat Politècnica de Catalunya</p>
-                        <p>Bachelor's degree, Industrial engineering</p>
-                        <p>2013-2017</p>
+
+                <div class="descripcion">
+                    <div class="container-description">
+                        <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Collaborator</p>
+                            <p>ETSEIB MOTORSPORT</p>
+                            <p>2018-2019</p>
+                        </div>
                     </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Universitat Politècnica de Catalunya</p>
-                        <p>Master's degree, Industrial engineering</p>
-                        <p>2017-2020</p>
+                    <div class="container-description">
+                        <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
+                        <div class="especifica-descripcion">
+                            <p>R&D Mechanical Engineer - Internship</p>
+                            <p>HP Inc.</p>
+                            <p>2018-2019</p>
+                        </div>
                     </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Universitat Politècnica de Catalunya</p>
-                        <p>Postgraduate degree, Computer science engineering</p>
-                        <p>2023-2024</p>
+                    <div class="container-description">
+                        <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
+                        <div class="especifica-descripcion">
+                            <p>R&D Mechanical Engineer - Graduate Program</p>
+                            <p>HP Inc.</p>
+                            <p>2019-2021</p>
+                        </div>
                     </div>
+                    <div class="container-description">
+                        <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
+                        <div class="especifica-descripcion">
+                            <p>R&D Mechanical Engineer - Intermediate level</p>
+                            <p>HP Inc.</p>
+                            <p>2021-currently</p>
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>
+
+            <!-- SECCION DE HABILIDADES -->
+            <div class="seccion">
+                <div class="header-seccion background-skills">
+                    <img src="Images/icons/plumbing.svg" alt="icono de la sección" class="icon">
+                    <p class="title-seccion">Skills</p>
+                </div>
+
+                <div class="descripcion">
+                    <div class="container-description">
+                        <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>ME engineering</p>
+                            <li>PTC Creo</li>
+                            <li>ANSYS</li>
+                            <li>MathCAD</li>
+                            <li>Matlab-Simulink</li>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Computer Science Engineering - Languages</p>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Tcl</li>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
+                        <div class="especifica-descripcion">
+                            <p>Bussiness Administration</p>
+                            <li>JIRA</li>
+                            <li>Windchill</li>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <!-- SECCION DE Certificaciones -->
+            <div class="seccion">
+                <div class="header-seccion background-certificaciones">
+                    <img src="Images/icons/card_membership.svg" alt="icono de la sección" class="icon">
+                    <p class="title-seccion">Certificaciones</p>
+                </div>
+
+                <div class="descripcion">
+                    <div class="container-description">
+                        <img src="Images/icons/Udemy-Logo.png" alt="School" class="icon-descripcion Udemy">
+                        <div class="especifica-descripcion">
+                            <p>Node.js, MVC and REST APIs: Bootcamp for web development</p>
+                            <p>Udemy</p>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                    <div class="container-description">
+                        <img src="Images/icons/Udemy-Logo.png" alt="School" class="icon-descripcion Udemy">
+                        <div class="especifica-descripcion">
+                            <p>JavaScript for Full stack web technologies</p>
+                            <p>Udemy</p>
+                            <p>2022</p>
+                        </div>
+                    </div>
                 
+                </div>
             </div>
+
         </div>
 
-        <!-- SECCION DE EXPERIENCIA LABORAL -->
-        <div class="seccion">
-            <div class="header-seccion background-experiencia">
-                <img src="Images/icons/work_history.svg" alt="icono de la sección" class="icon">
-                <p class="title-seccion">Experiencia</p>
-            </div>
-
-            <div class="descripcion">
-                <div class="container-description">
-                    <img src="Images/icons/UPC-logo.png" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Collaborator</p>
-                        <p>ETSEIB MOTORSPORT</p>
-                        <p>2018-2019</p>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
-                    <div class="especifica-descripcion">
-                        <p>R&D Mechanical Engineer - Internship</p>
-                        <p>HP Inc.</p>
-                        <p>2018-2019</p>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
-                    <div class="especifica-descripcion">
-                        <p>R&D Mechanical Engineer - Graduate Program</p>
-                        <p>HP Inc.</p>
-                        <p>2019-2021</p>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/HP_logo.jpeg" alt="School" class="icon-descripcion HP">
-                    <div class="especifica-descripcion">
-                        <p>R&D Mechanical Engineer - Intermediate level</p>
-                        <p>HP Inc.</p>
-                        <p>2021-currently</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-        <!-- SECCION DE HABILIDADES -->
-        <div class="seccion">
-            <div class="header-seccion background-skills">
-                <img src="Images/icons/plumbing.svg" alt="icono de la sección" class="icon">
-                <p class="title-seccion">Skills</p>
-            </div>
-
-            <div class="descripcion">
-                <div class="container-description">
-                    <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>ME engineering</p>
-                        <li>PTC Creo</li>
-                        <li>ANSYS</li>
-                        <li>MathCAD</li>
-                        <li>Matlab-Simulink</li>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Computer Science Engineering - Languages</p>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Tcl</li>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/plumbing.svg" alt="School" class="icon-descripcion UPC">
-                    <div class="especifica-descripcion">
-                        <p>Bussiness Administration</p>
-                        <li>JIRA</li>
-                        <li>Windchill</li>
-                    </div>
-                </div>                
-            </div>
-        </div>
-        <!-- SECCION DE Certificaciones -->
-        <div class="seccion">
-            <div class="header-seccion background-certificaciones">
-                <img src="Images/icons/card_membership.svg" alt="icono de la sección" class="icon">
-                <p class="title-seccion">Certificaciones</p>
-            </div>
-
-            <div class="descripcion">
-                <div class="container-description">
-                    <img src="Images/icons/Udemy-Logo.png" alt="School" class="icon-descripcion Udemy">
-                    <div class="especifica-descripcion">
-                        <p>Node.js, MVC and REST APIs: Bootcamp for web development</p>
-                        <p>Udemy</p>
-                        <p>2022</p>
-                    </div>
-                </div>
-                <div class="container-description">
-                    <img src="Images/icons/Udemy-Logo.png" alt="School" class="icon-descripcion Udemy">
-                    <div class="especifica-descripcion">
-                        <p>JavaScript for Full stack web technologies</p>
-                        <p>Udemy</p>
-                        <p>2022</p>
-                    </div>
-                </div>
-             
-            </div>
-        </div>
+       
     </main>
 
     <footer>
-        <div> Iconos de Linkedin y Github
+        <div class="iconos">
+            <!-- Icono de LinkedIn -->
 
+            <!-- Icono de LinkedIn -->
+            <i class="fab fa-linkedin dynamic-icon"></i>
+
+            <!-- Icono de GitHub -->
+            <i class="fab fa-github dynamic-icon"></i>
         </div>
 
         <div> alejandro.alarcon.cano@gmail.com

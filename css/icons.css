@@ -33,3 +33,31 @@
     border-radius: 50%;
     
 }
+
+.dynamic-icon {
+    font-size: 20px; 
+    color: #fff; 
+    background-color: #333; 
+    padding: 10px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .dynamic-icon:hover {
+    background-color: white; 
+    color: #333;
+  }
+
+  .icono-header{
+    width:40px;
+    background-color:black;
+    fill: white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .icono-header:hover{
+    background-color: white; 
+    fill: #333;
+  }
