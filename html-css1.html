@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
+
   <body>
     <div class="contenedor">
       <header>Fullstack Web Technologies</header>
@@ -67,10 +68,7 @@
             So a way to show the text “this is the: 2 × 3” in HTML would be:
           </p>
 
-          <pre>
-            <code>
-&lt;body&gt;This is the &amp;lt;body&amp;gt;: 2 &times; 3 &lt;/body&gt;</code>
-          </pre>
+          <pre><code>&lt;body&gt;This is the &amp;lt;body&amp;gt;: 2 &times; 3 &lt;/body&gt;</code></pre>
 
           <p>
             which uses the entities lt (less than), gt (greater than), and
@@ -97,17 +95,16 @@
 
           <p>
             Since tags have “children” and those children tags can have more
-            children, any HTML document is an <strong>tree of elements</strong> (usually
-            represented upside-down), with tags at the top of the hierarchy
-            being the roots. It is important to read HTML documents keeping in
-            mind this tree and making sure not to not loose track of it by
-            indenting the code properly and using a good editor.
+            children, any HTML document is an
+            <strong>tree of elements</strong> (usually represented upside-down),
+            with tags at the top of the hierarchy being the roots. It is
+            important to read HTML documents keeping in mind this tree and
+            making sure not to not loose track of it by indenting the code
+            properly and using a good editor.
           </p>
 
           <h2>Minimal Document</h2>
-          <p>
-            A sample minimal HTML document is this:
-          </p>
+          <p>A sample minimal HTML document is this:</p>
 
           <pre>
 <code>&lt;!doctype html&gt;
@@ -121,7 +118,64 @@
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
+          <p>
+            It must contain at least: the &lt;!doctype html&gt; tag at the
+            beginning, which acts as a mark for the HTML type of file; an html
+            tag enclosing the whole document; and both &lt;head&gt; and
+            &lt;body&gt; which describe the metadata and the visible document.
+          </p>
 
+          <h2>Document Metadata</h2>
+
+          <p>
+            The &lt;head&gt; tag contains metadata, which describes things that
+            are not directly shown on the page itself.
+          </p>
+
+          <h3>The Title</h3>
+          <p>
+            The &lt;title&gt; tag gives a title to the page, which usually is
+            displayed in the browser’s tab. If that page is saved, the title is
+            also used for the file.
+          </p>
+
+          <pre><code>&lt;title&gt; A simple title &lt;/title&gt;</code></pre>
+
+          <h3>Links</h3>
+
+          <p>
+            Links are relationships between the document we are describing and
+            other resources. These links can be of different types depending on
+            the “relationship”, abbreviated rel as an attribute. The
+            &lt;link&gt; is a self-closing tag.
+          </p>
+          <ol>
+            <li>
+              <strong>Stylesheets</strong>: rel="stylesheet", to attach a CSS
+              style-sheet to the page (can be used many times).
+
+              <pre><code>&lt;link rel="stylesheet" href="/styles.css" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Stylesheets for specific media</strong>: adding
+              media="..." we can choose for what media is the stylesheet.
+
+              <pre><code>&lt;link rel="stylesheet" media="print" href="/print.css" /&gt;
+&lt;link rel="stylesheet" media="screen and (max-width: 600px)" href="/mobile.css" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Favicon</strong>: rel="icon", to describe what the icon of
+              the page should be.
+              <pre><code>&lt;link rel="icon" href="favicon.ico" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Preload</strong>: To indicate files to preload, otherwise
+              they are loaded on-demand, and preloading them can speed-up things
+              quite a bit.
+
+              <pre><code>&lt;link rel="preload" href="/fonts/my-font.woff2" as="font" /&gt;</code></pre>
+            </li>
+          </ol>
         </div>
       </main>
     </div>
