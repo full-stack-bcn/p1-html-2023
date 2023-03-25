@@ -8,6 +8,7 @@
   --monospace-font: "Iosevka Term";
   --background-color: hsl(45, 26%, 95%);
   --background-color-2: hsl(45, 26%, 92%);
+  --background-color-3: #6633001a;
   --div-izquierdo:15rem;
 }
 
@@ -26,7 +27,7 @@ body {
 header {
   z-index: 100;
   position: fixed;
-  background-color: #6633001a;
+  background-color: var(--background-color-3);
   backdrop-filter: blur(8px);
   top: 0;
   left: 0;
@@ -40,6 +41,20 @@ main{
   margin-left: 15rem;
 }
 
+pre {
+  background-color: #1E1E1E;
+  color: #D4D4D4;
+  font-size: 14px;
+  font-family: Consolas, monospace;
+  padding: 10px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #2D2D30;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
 .contenedor {
   height: 100vh; 
   
@@ -51,6 +66,7 @@ main{
   width: 20%;
   top: var(--header-height);
   width: var(--div-izquierdo);
+  background-color: var(--background-color-2);
 }
 
 .div-derecho{
