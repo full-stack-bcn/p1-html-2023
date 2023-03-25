@@ -68,7 +68,8 @@
           </p>
 
           <pre>
-            &lt;body&gt;This is the &amp;lt;body&amp;gt;: 2 &times; 3 &lt;/body&gt;
+            <code>
+&lt;body&gt;This is the &amp;lt;body&amp;gt;: 2 &times; 3 &lt;/body&gt;</code>
           </pre>
 
           <p>
@@ -89,8 +90,38 @@
 
           <h3>For example:</h3>
 
-          <!-- The next paragraph should be changed to something else soon -->
-          <p>Placeholder</p>
+          <pre><code> &lt;!-- The next paragraph should be changed to something else soon --&gt;
+&lt;p&gt;Placeholder&lt;/p&gt;</code></pre>
+
+          <h2>Elements Trees</h2>
+
+          <p>
+            Since tags have “children” and those children tags can have more
+            children, any HTML document is an <strong>tree of elements</strong> (usually
+            represented upside-down), with tags at the top of the hierarchy
+            being the roots. It is important to read HTML documents keeping in
+            mind this tree and making sure not to not loose track of it by
+            indenting the code properly and using a good editor.
+          </p>
+
+          <h2>Minimal Document</h2>
+          <p>
+            A sample minimal HTML document is this:
+          </p>
+
+          <pre>
+<code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Minimal&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Minimal Doc&lt;/h1&gt;
+    &lt;p&gt;Hello&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
         </div>
       </main>
     </div>
