@@ -1,0 +1,167 @@
+ :root{
+    --fuenteHeading:'Staatliches', sans-serif;
+    --fuenteTitulos:'Bebas Neue', serif;
+    --fuenteBody:'Crimson Text', serif;
+ }
+
+ .header-cv {
+    font-family: var(--fuenteHeading);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    margin-left: -1rem;
+    background-color: rgba(0, 255, 213, 0.397); 
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
+  
+ }
+
+.visible{
+   transform: translateY(0);
+
+ }
+
+ .hidden{
+   transform: translateY(-110%);
+
+ }
+
+ .name{
+   font-weight: 600;
+   font-size: x-large;
+ }
+
+ .imagen-perfil {
+   width: 100px;
+   height: auto;
+   border-radius: 50%;
+ }
+
+ .nav-menu .imagen-perfil{
+   width: 75px;
+   height: auto;
+   margin-left: 2rem;
+ }
+
+.nav-menu{
+   position: fixed;
+   top: 0;
+   right: 0;
+   padding-right: 1rem;
+   transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
+   z-index: 1;
+   padding: 0.75rem;
+   background-color:  rgba(0, 255, 213, 0.397);
+   border-bottom-left-radius: 20%;
+  
+}
+ .content{
+   margin-top: 9.25rem;
+ }
+
+ /* CSS de cada seccion */
+ 
+.seccion {
+   padding-top: 1rem;
+   display: flex;
+   flex-direction: row;
+   margin: -1rem;
+   
+}
+
+
+.header-seccion{
+   display: flex;
+   flex-direction: row;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   width: 30%;
+   position: relative;
+   
+}
+
+
+.background{
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: rgba(0, 0, 0, 0.486);
+   z-index: 1;
+
+}
+.background-educacion{
+   background-image: url('/Images/biblioteca.jpg');
+   opacity: 3;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+.background-experiencia{
+   background-image: url('/Images/experiencia.jpg');
+   opacity: 3;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+.background-skills{
+   background-image: url('/Images/skills.jpg');
+   opacity: 3;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+.background-certificaciones{
+   background-image: url('/Images/certificaciones.jpg');
+   opacity: 3;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title-seccion{
+   padding-left: 4rem;
+   margin-top: 1.5rem;
+   font-family: var(--fuenteTitulos);
+   font-size: xx-large;
+   color: white;
+}
+
+.descripcion{
+   padding-top: 1rem;
+   padding-left: 1rem;
+   background-color: aliceblue;
+   width: 70%;
+ 
+}
+
+.container-description{
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   padding-left: 4rem;
+   padding-top: -1rem;
+}
+
+.especifica-descripcion{
+   font-family: var(--fuenteBody);
+}
+.especifica-descripcion p:nth-child(1) {
+   font-weight: bold;
+ }
+.especifica-descripcion p:nth-child(3) {
+   color:grey;
+ }
+
+footer{
+   font-family: var(--fuenteHeading);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 4rem;
+   padding-bottom: 2rem;
+   background-color: rgba(0, 255, 213, 0.397);
+   margin-left: -2rem;
+   margin-bottom: -1rem;
+   
+ }
+

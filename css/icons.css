@@ -1,0 +1,83 @@
+.icon{
+    width: 3rem;
+    fill: white;
+    background-color: white;
+    border-radius: 50%;
+    margin:1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.UPC{
+    width: 35px;
+    margin-top: 1rem;
+}
+.HP{
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    
+}
+.Udemy{
+    width: 50px;
+    height: 30px;
+    margin-top: 1rem;
+    border-radius: 50%;
+    
+}
+
+.dynamic-icon {
+    font-size: 20px; 
+    color: #fff; 
+    background-color: #333; 
+    padding: 10px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dynamic-icon:hover {
+    background-color: white; 
+    color: #333;
+  }
+
+  .icono-header{
+    width:40px;
+    background-color:black;
+    fill: white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-bottom: -1rem;
+    cursor: pointer;
+  }
+
+  .icono-header:hover{
+    background-color: white; 
+    fill: #333;
+  }
+
+  .small-icon{
+    width: 25px;
+    height: auto;
+    background-color:black;
+    fill: white;
+    border-radius: 50%;
+    margin-left: 0.25rem;
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+  }
+
+
+
+  .small-icon:hover{
+    background-color: white; 
+    fill: #333;
+  }
