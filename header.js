@@ -2,6 +2,7 @@
 const scrollfunction= ()=>{
     const header= document.querySelector('#header')
     const NavMenu=document.querySelector('#nav-menu')
+    
     let previous_pos=window.scrollY
 
     window.addEventListener('scroll', function() {

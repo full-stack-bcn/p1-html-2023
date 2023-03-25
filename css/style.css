@@ -58,6 +58,9 @@
    padding-right: 1rem;
    transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
    z-index: 1;
+   padding: 0.75rem;
+   background-color:  rgba(0, 255, 213, 0.397);
+   border-bottom-left-radius: 20%;
   
 }
  .content{
