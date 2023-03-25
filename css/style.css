@@ -88,6 +88,15 @@
    
 }
 
+
+.background{
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: rgba(0, 0, 0, 0.486);
+   z-index: 1;
+
+}
 .background-educacion{
    background-image: url('/Images/biblioteca.jpg');
    opacity: 3;
