@@ -63,9 +63,12 @@ pre {
 .div-izquierdo {
   position: fixed;
   width: 20%;
+  height: 100%;
   top: var(--header-height);
   width: var(--div-izquierdo);
   background-color: var(--background-color-2);
+  padding-top: 2rem;
+  padding-left: 1rem;
 }
 
 .div-derecho{
