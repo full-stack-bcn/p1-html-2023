@@ -55,9 +55,28 @@
     border-radius: 50%;
     margin-left: 0.5rem;
     margin-bottom: -1rem;
+    cursor: pointer;
   }
 
   .icono-header:hover{
+    background-color: white; 
+    fill: #333;
+  }
+
+  .small-icon{
+    width: 25px;
+    height: auto;
+    background-color:black;
+    fill: white;
+    border-radius: 50%;
+    margin-left: 0.25rem;
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+  }
+
+
+
+  .small-icon:hover{
     background-color: white; 
     fill: #333;
   }
