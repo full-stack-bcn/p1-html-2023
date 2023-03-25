@@ -15,6 +15,15 @@
       <div class="div-izquierdo">
         <a href="#top" class="mainTitle">HTML and CSS 1</a>
         <a href="#headerHtml" class="subtitle">HTML</a>
+        <a href="#markupLanguages" class="subtitle-leve-2">Markup Languages</a>
+        <a href="#entities" class="subtitle-leve-2">Entities</a>
+        <a href="#comments" class="subtitle-leve-2">Comments</a>
+        <a href="#elementTrees" class="subtitle-leve-2">Element Trees</a>
+        <a href="#minimalDocument" class="subtitle-leve-2">Minimal Document</a>
+
+        <a href="#documentMetadata" class="subtitle">Document Metadata</a>
+    
+        
       </div>
       <main>
         <div class="div-derecho">
@@ -25,7 +34,7 @@
             <h2>HTML</h2>
           </div>
 
-          <h3><em>Markup Languages</em></h3>
+          <h3 id="markupLanguages"><em>Markup Languages</em></h3>
           <p>
             A markup language is <strong>not</strong> a programming language. A
             markup language describes documents in which some marks add
@@ -51,7 +60,7 @@
             <li>Empty elements, like &lt;br&gt; (no slash at the end).</li>
           </ul>
 
-          <div id="headerEntities">
+          <div id="entities">
             <h2>Entities</h2>
           </div>
 
@@ -75,7 +84,7 @@
             times.
           </p>
 
-          <div id="headerHtml">
+          <div id="comments">
             <h2>Comments</h2>
           </div>
 
@@ -91,7 +100,7 @@
           <pre><code> &lt;!-- The next paragraph should be changed to something else soon --&gt;
 &lt;p&gt;Placeholder&lt;/p&gt;</code></pre>
 
-          <h2>Elements Trees</h2>
+          <h2 id="elementTrees">Element Trees</h2>
 
           <p>
             Since tags have “children” and those children tags can have more
@@ -103,7 +112,7 @@
             properly and using a good editor.
           </p>
 
-          <h2>Minimal Document</h2>
+          <h2 id="minimalDocument">Minimal Document</h2>
           <p>A sample minimal HTML document is this:</p>
 
           <pre>
@@ -125,7 +134,7 @@
             &lt;body&gt; which describe the metadata and the visible document.
           </p>
 
-          <h2>Document Metadata</h2>
+          <h2 id="documentMetadata">Document Metadata</h2>
 
           <p>
             The &lt;head&gt; tag contains metadata, which describes things that
@@ -176,6 +185,67 @@
               <pre><code>&lt;link rel="preload" href="/fonts/my-font.woff2" as="font" /&gt;</code></pre>
             </li>
           </ol>
+
+          <h3>Style</h3>
+          <p>
+            You can write styles inside the &lt;head&gt; element with a
+            &lt;style&gt; tag, using CSS directly embedded in the html.
+          </p>
+
+          <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        font-size: 20pt;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    This text will be large!
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          <h3>Scripts</h3>
+          <p>
+            You can also include scripts in the head> with the &lt;script&gt;
+            tag. Using both &lt;style&gt; and &lt;script&gt; allows you to send
+            a self-contained web document.
+          </p>
+
+          <h3>Metainformation</h3>
+          <p>
+            With the &lt;meta&gt; tag you can attach metainformation of various
+            kinds to the document. The &lt;meta&gt; tag is an empty tag.
+          </p>
+          <p>Examples:</p>
+
+          <ol>
+            <li>
+              Setting the <strong>encoding</strong>:
+
+              <pre><code>&lt;meta charset="utf-8" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Description</strong> of the website (good for SEO):
+              <pre><code>&lt;meta name="description" content="A brief description of my website" /&gt;</code></pre>
+            </li>
+            <li>
+              Setting some <strong>keywords</strong> for your site (good for
+              SEO):
+              <pre><code>&lt;meta name="keywords" content="educational, course, programming"  /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Redirect</strong> to another site after a certain number
+              of seconds:
+              <pre><code>&lt;meta http-equiv="refresh" content="3;https://www.upc.edu" /&gt;</code></pre>
+            </li>
+          </ol>
+          <p>
+            There are many more, and some people have collected a
+            <a href="https://gist.github.com/whitingx/3840905"
+              >somewhat complete list of meta tags.</a
+            >
+          </p>
         </div>
       </main>
     </div>

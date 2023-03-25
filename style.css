@@ -18,7 +18,7 @@ body {
   align-items: stretch;
   padding: 0;
   margin: 0;
-  font-family: serif;
+  font-family: var(--sans-serif-font);
   font-size: 14pt;
   color: #222;
   background-color: var(--background-color);
@@ -62,7 +62,6 @@ pre {
 
 .div-izquierdo {
   position: fixed;
-  border: 3px solid black;
   width: 20%;
   top: var(--header-height);
   width: var(--div-izquierdo);
@@ -92,7 +91,7 @@ pre {
 .subtitle {
   
   font-size: 1rem;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.5rem 0.5rem;
 }
 
 * {
@@ -102,4 +101,12 @@ pre {
 p {
   margin-top: 1rem;
   margin-bottom: 0.4rem;
+}
+
+.subtitle-leve-2{
+  font-size: 0.8rem;
+  font-style: italic;
+  color:#83838380;
+  margin: 0;
+  padding: 0 0 0 0.6rem
 }
