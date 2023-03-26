@@ -1,0 +1,42 @@
+header{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+}  
+  
+li {
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente sans-serif */
+  }
+
+.contenedor {
+    max-width: 960px; /* establece el ancho máximo del contenedor */
+    margin: 0 auto; /* centra el contenedor horizontalmente */
+    padding: 0 10%; /* establece el margen izquierdo y derecho del 10% */
+  }
+  
+  .contenedorInfoPersona {
+    text-align: center; /* centra el contenido del contenedor */
+    border-top: 1px solid black; /* agrega un borde superior de 1px de ancho y color negro */
+    border-bottom: 1px solid black; /* agrega un borde inferior de 1px de ancho y color negro */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contenedorImagen{
+    max-width: 20%;
+  }
+  
+  .contenedorImagen img {
+    margin-left: 28rem;
+    margin-top: 0.3rem;
+    width: 100%;
+  }
