@@ -40,3 +40,14 @@ body {
     margin-top: 0.3rem;
     width: 100%;
   }
+
+  .espaciadora{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitulo{
+    color: #51ccc0;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
