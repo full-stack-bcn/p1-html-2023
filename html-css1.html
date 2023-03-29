@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Web Technologies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header>Fullstack Web Technologies</header>
+      <div class="div-izquierdo">
+        <a href="#top" class="mainTitle">HTML and CSS 1</a>
+        <a href="#headerHtml" class="subtitle">HTML</a>
+        <a href="#markupLanguages" class="subtitle-leve-2">Markup Languages</a>
+        <a href="#entities" class="subtitle-leve-2">Entities</a>
+        <a href="#comments" class="subtitle-leve-2">Comments</a>
+        <a href="#elementTrees" class="subtitle-leve-2">Element Trees</a>
+        <a href="#minimalDocument" class="subtitle-leve-2">Minimal Document</a>
+        <a href="#documentMetadata" class="subtitle">Document Metadata</a>
+        <a href="#theTitle" class="subtitle-leve-2">The Title</a>
+        <a href="#links" class="subtitle-leve-2">Links</a>
+        <a href="#style" class="subtitle-leve-2">Styles</a>
+        <a href="#scripts" class="subtitle-leve-2">Scripts</a>
+      </div>
+      <main>
+        <div class="div-derecho">
+          <div id="top">
+            <h1>HTML and CSS 1</h1>
+          </div>
+          <div id="headerHtml">
+            <h2>HTML</h2>
+          </div>
+
+          <h3 id="markupLanguages"><em>Markup Languages</em></h3>
+          <p>
+            A markup language is <strong>not</strong> a programming language. A
+            markup language describes documents in which some marks add
+            information.
+            <a href="https://html.spec.whatwg.org/dev/">
+              The Hyper-Text Markup Language</a
+            >
+            is a standard for documents displayed in a web browser. HTML uses
+            tags enclosed in angle brackets (&lt;&gt;) to mark text. There are 3
+            types of tags:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Open</strong> &lt;tag&gt;, and close &lt;/tag&gt;, like
+              &lt;p&gt; A paragraph &lt;/p&gt;. In between the opening and
+              closing tags we can put anything, including other tags.
+            </li>
+            <li>
+              <strong>Self-closing</strong>, as in &lt;img src="cat.png" /&gt;
+              (note the slash at the end).
+            </li>
+            <li>Empty elements, like &lt;br&gt; (no slash at the end).</li>
+          </ul>
+
+          <div id="entities">
+            <h2>Entities</h2>
+          </div>
+
+          <p>
+            Since angle brackets are used for marks, a document displaying those
+            symbols will need to represent them in another way. Entities
+            describe all kinds of symbols (including angle brackets), and they
+            start with a & and end with ;. There is a full list of standard
+            entities and they are useful in general for showing mathematical
+            operations, arrows, special accented characters, etc.
+          </p>
+
+          <p>
+            So a way to show the text “this is the: 2 × 3” in HTML would be:
+          </p>
+
+          <pre><code>&lt;body&gt;This is the &amp;lt;body&amp;gt;: 2 &times; 3 &lt;/body&gt;</code></pre>
+
+          <p>
+            which uses the entities lt (less than), gt (greater than), and
+            times.
+          </p>
+
+          <div id="comments">
+            <h2>Comments</h2>
+          </div>
+
+          <p>
+            As in typical programming languages, you can insert comments in an
+            HTML document, which are tags ignored by the parser and therefore
+            only useful for developers which work on the code. They start with
+            <!-- and end with -->.
+          </p>
+
+          <h3>For example:</h3>
+
+          <pre><code> &lt;!-- The next paragraph should be changed to something else soon --&gt;
+&lt;p&gt;Placeholder&lt;/p&gt;</code></pre>
+
+          <h2 id="elementTrees">Element Trees</h2>
+
+          <p>
+            Since tags have “children” and those children tags can have more
+            children, any HTML document is an
+            <strong>tree of elements</strong> (usually represented upside-down),
+            with tags at the top of the hierarchy being the roots. It is
+            important to read HTML documents keeping in mind this tree and
+            making sure not to not loose track of it by indenting the code
+            properly and using a good editor.
+          </p>
+
+          <h2 id="minimalDocument">Minimal Document</h2>
+          <p>A sample minimal HTML document is this:</p>
+
+          <pre>
+<code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Minimal&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Minimal Doc&lt;/h1&gt;
+    &lt;p&gt;Hello&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          <p>
+            It must contain at least: the &lt;!doctype html&gt; tag at the
+            beginning, which acts as a mark for the HTML type of file; an html
+            tag enclosing the whole document; and both &lt;head&gt; and
+            &lt;body&gt; which describe the metadata and the visible document.
+          </p>
+
+          <h2 id="documentMetadata">Document Metadata</h2>
+
+          <p>
+            The &lt;head&gt; tag contains metadata, which describes things that
+            are not directly shown on the page itself.
+          </p>
+
+          <h3 id="theTitle">The Title</h3>
+          <p>
+            The &lt;title&gt; tag gives a title to the page, which usually is
+            displayed in the browser’s tab. If that page is saved, the title is
+            also used for the file.
+          </p>
+
+          <pre><code>&lt;title&gt; A simple title &lt;/title&gt;</code></pre>
+
+          <h3 id="links">Links</h3>
+
+          <p>
+            Links are relationships between the document we are describing and
+            other resources. These links can be of different types depending on
+            the “relationship”, abbreviated rel as an attribute. The
+            &lt;link&gt; is a self-closing tag.
+          </p>
+          <ol>
+            <li>
+              <strong>Stylesheets</strong>: rel="stylesheet", to attach a CSS
+              style-sheet to the page (can be used many times).
+
+              <pre><code>&lt;link rel="stylesheet" href="/styles.css" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Stylesheets for specific media</strong>: adding
+              media="..." we can choose for what media is the stylesheet.
+
+              <pre><code>&lt;link rel="stylesheet" media="print" href="/print.css" /&gt;
+&lt;link rel="stylesheet" media="screen and (max-width: 600px)" href="/mobile.css" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Favicon</strong>: rel="icon", to describe what the icon of
+              the page should be.
+              <pre><code>&lt;link rel="icon" href="favicon.ico" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Preload</strong>: To indicate files to preload, otherwise
+              they are loaded on-demand, and preloading them can speed-up things
+              quite a bit.
+
+              <pre><code>&lt;link rel="preload" href="/fonts/my-font.woff2" as="font" /&gt;</code></pre>
+            </li>
+          </ol>
+
+          <h3 id="style">Style</h3>
+          <p>
+            You can write styles inside the &lt;head&gt; element with a
+            &lt;style&gt; tag, using CSS directly embedded in the html.
+          </p>
+
+          <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        font-size: 20pt;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    This text will be large!
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          <h3 id="scripts">Scripts</h3>
+          <p>
+            You can also include scripts in the head> with the &lt;script&gt;
+            tag. Using both &lt;style&gt; and &lt;script&gt; allows you to send
+            a self-contained web document.
+          </p>
+
+          <h3>Metainformation</h3>
+          <p>
+            With the &lt;meta&gt; tag you can attach metainformation of various
+            kinds to the document. The &lt;meta&gt; tag is an empty tag.
+          </p>
+          <p>Examples:</p>
+
+          <ol>
+            <li>
+              Setting the <strong>encoding</strong>:
+
+              <pre><code>&lt;meta charset="utf-8" /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Description</strong> of the website (good for SEO):
+              <pre><code>&lt;meta name="description" content="A brief description of my website" /&gt;</code></pre>
+            </li>
+            <li>
+              Setting some <strong>keywords</strong> for your site (good for
+              SEO):
+              <pre><code>&lt;meta name="keywords" content="educational, course, programming"  /&gt;</code></pre>
+            </li>
+            <li>
+              <strong>Redirect</strong> to another site after a certain number
+              of seconds:
+              <pre><code>&lt;meta http-equiv="refresh" content="3;https://www.upc.edu" /&gt;</code></pre>
+            </li>
+          </ol>
+          <p>
+            There are many more, and some people have collected a
+            <a href="https://gist.github.com/whitingx/3840905"
+              >somewhat complete list of meta tags.</a
+            >
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

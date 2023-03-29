@@ -1,0 +1,76 @@
+header{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+}  
+  
+li {
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente sans-serif */
+  }
+
+.contenedor {
+    max-width: 960px; /* establece el ancho máximo del contenedor */
+    margin: 0 auto; /* centra el contenedor horizontalmente */
+    padding: 0 10%; /* establece el margen izquierdo y derecho del 10% */
+  }
+  
+  .contenedorInfoPersona {
+    text-align: center; /* centra el contenido del contenedor */
+    border-top: 1px solid black; /* agrega un borde superior de 1px de ancho y color negro */
+    border-bottom: 1px solid black; /* agrega un borde inferior de 1px de ancho y color negro */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contenedorImagen{
+    max-width: 20%;
+  }
+  
+  .contenedorImagen img {
+    margin-left: 28rem;
+    margin-top: 0.3rem;
+    width: 100%;
+  }
+
+  .espaciadora{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitulo{
+    color: #51ccc0;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+
+  
+  .relevantExperience {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  .relevantExperience td {
+    text-align: center;
+    border: 1px solid black;
+  }
+
+
+  .relevantExperience tr:first-child td:first-child {
+    /* Establece el ancho de la primera celda de cada fila en un 20% */
+    width: 20%;
+  }
+
+  .relevantExperience td:nth-child(2) {
+    /* Alinea el texto en la segunda columna a la izquierda */
+    text-align: left;
+  }
